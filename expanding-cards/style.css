@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    gap: 8px;
+    display: flex;
+    padding: 80px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    height: 100%;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 0.5;
+    cursor: pointer;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.card.active {
+    flex: 5;
+  }
